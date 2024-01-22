@@ -13,8 +13,6 @@ jobs:
       - run: pixi add poetry
       - run: pixi run poetry install
       - run: pixi run poetry build
-      - run: ls dist
-      - run: pixi run which pip
       - run: pixi run pip install dist/*.whl
       - name: Test Fibonacci class
-        run: pixi run python -c "from fibonacci._lib import Fibonnaci; assert list(Fibonnaci(5)) == [0, 1, 1, 2, 3]"
+        run: pixi run python -c "from fibonacci._lib import Fibonacci; assert list(Fibonacci(5)) == [0, 1, 1, 2, 3]"
