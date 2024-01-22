@@ -166,3 +166,6 @@ build.zig
 
 # IDE
 .idea/
+# pixi environments
+.pixi
+
