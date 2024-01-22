@@ -11,3 +11,5 @@ jobs:
       - run: pixi add python=3.12
       - run: pixi add poetry
       - run: pixi run poetry install
+      - run: pixi run poetry build
+      - run: ls dist
