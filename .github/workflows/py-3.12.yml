@@ -9,6 +9,7 @@ jobs:
       - run: echo /home/runner/.pixi/bin >> $GITHUB_PATH
       - run: pixi init
       - run: pixi add python=3.12
+      - run: pixi add pip
       - run: pixi add poetry
       - run: pixi run poetry install
       - run: pixi run poetry build
