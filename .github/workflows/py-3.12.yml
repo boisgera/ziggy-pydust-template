@@ -13,3 +13,4 @@ jobs:
       - run: pixi run poetry install
       - run: pixi run poetry build
       - run: ls dist
+      - run: pixi run pip install dist/*.whl
